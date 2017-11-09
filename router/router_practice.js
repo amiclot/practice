@@ -4,6 +4,15 @@ var port = process.env.PORT || 8080;
 
 //Basic setup
 
+//this is my server.js
+
+//require(models/burgers)...
+
+var
+
+
+// this eventually goes to controllers folder
+
 var router = express.Router();
 
 // route middleware that will happen on every request
@@ -16,7 +25,7 @@ router.use(function(req, res, next) {
     next(); 
 });
 
-// home page route (http://localhost:8080)
+
 router.get('/', function(req, res) {
     res.send('im the home page!');  
 });
@@ -28,6 +37,10 @@ router.get('/hello/:name', function(req, res) {
 router.get('/sample', function(req, res) {
     res.send('this is a poop!');  
 });
+
+//router.params
+//module.exports = router;
+//end controllers
 
 
 app.use('/', router);
